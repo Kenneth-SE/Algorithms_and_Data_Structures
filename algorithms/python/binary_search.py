@@ -1,6 +1,3 @@
-from math import floor
-
-
 def binary_search(array, array_length, target):
     """
     Search algorithm that finds the position of a target value within a sorted array.
@@ -16,7 +13,7 @@ def binary_search(array, array_length, target):
     # Ensure left index is always less than the right index
     while left_index <= right_index:
         # New middle of the half
-        middle_index = floor((left_index + right_index) / 2)
+        middle_index = (left_index + right_index) // 2
         
         # Find which half of the array the target is within
         current = array[middle_index]
