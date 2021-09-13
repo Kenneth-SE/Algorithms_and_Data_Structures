@@ -1,8 +1,13 @@
+"""
+Sorting algorithm using Divide and Conquer paradigm to output a sorted array.
+Recursively calls merge_sort for both halves of the array at every level.
+Worst case = O(n*log(n))
+Average case = O(n*log(n))
+Best case = O(n*log(n))
+Worst case space = O(n)
+"""
+
 def merge_sort(array):
-    """
-    Sorting algorithm using Divide and Conquer paradigm to output a sorted array.
-    Recursively calls merge_sort for both halves of the array at every level.
-    """
     def merge(t_array, t_left_array, t_right_array):
         """
         Merges the two halves together, sorting the full array.

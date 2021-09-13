@@ -1,11 +1,12 @@
+"""
+Search algorithm that finds the position of a target value within a sorted array.
+Worst case = O(log(n))
+Average case = O(log(n))
+Best case = O(1)
+Worst case space = O(1)
+"""
+
 def binary_search(array, array_length, target):
-    """
-    Search algorithm that finds the position of a target value within a sorted array.
-    Worst case = O(log(n))
-    Average case = O(log(n))
-    Best case = O(1)
-    Worst case space = O(1)
-    """
     # Both ends of the array
     left_index = 0
     right_index = array_length - 1
